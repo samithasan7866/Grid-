@@ -1,0 +1,95 @@
+
+<!-- AMIT HASAN SADHIN-->
+<!-- AMIT HASAN SADHIN-->
+<!-- MATRIC No. A19EC4006-->
+<!-- SECTION:-07-->
+<!-- LECTURER: DR.Hussein Samma-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">;
+    <title>Calculator Layout using Grid</title>
+
+    <script type="text/javascript" src="/ruxitagentjs_ICA2SVfjqru_10219210628133341.js" data-dtconfig="rid=RID_1607259525|rpid=1940388913|domain=utm.my|reportUrl=/rb_bf55506msj|app=c29cf76f80545096|rcdec=1209600000|featureHash=ICA2SVfjqru|vcv=2|rdnt=1|uxrgce=1|srcss=1|bp=3|srmcrv=10|cuc=zb5yyyel|mel=100000|dpvc=1|ssv=4|lastModification=1625056186563|dtVersion=10219210628133341|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA2SVfjqru_10219210628133341.js"></script><style>
+        .calculator {
+           
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 2fr 1.5fr repeat(4, 1fr);
+            justify-content: center;
+        }
+
+        #display {
+            grid-column: 1/5;
+            grid-row: 1/2;
+
+            background-color: black;
+            font-size: 2.5em;
+            color: white;
+            text-align: right;
+            padding: 1em;
+            border-radius: 0.5em 0.5em 0 0;
+        }
+
+        #plus {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        #btn-equal {
+            grid-column: 4/5;
+            grid-row: 3/7;
+            background-color: lightcoral;
+        }
+
+        .button {
+            border-radius: 0.5em;
+            font-size: 1.5em;
+            border: 0.5em solid gray;
+        }
+
+        .btn-operator {
+            font-size: 2em;
+        }
+
+        .btn-num {
+            background-color:rgb(250, 238, 238);
+            font-size: 2em;
+        }
+
+        #btn-equal {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" value="0">
+        <button class="btn-operator" id="plus">&plus;</button>
+        <button class="btn-operator" id="minus">&minus;</button>
+        <button class="btn-operator" id="times">&times;</button>
+        <button class="btn-operator" id="div">&div;</button>
+
+        <button id="btn-7" class="btn-num">7</button>
+        <button id="btn-8" class="btn-num">8</button>
+        <button id="btn-9" class="btn-num">9</button>
+        <button id="btn-4" class="btn-num">4</button>
+        <button id="btn-5" class="btn-num">5</button>
+        <button id="btn-6" class="btn-num">6</button>
+        <button id="btn-1" class="btn-num">1</button>
+        <button id="btn-2" class="btn-num">2</button>
+        <button id="btn-3" class="btn-num">3</button>
+        <button id="btn-0" class="btn-num">0</button>
+        <button id="btn-dot" class="btn-num">.</button>
+        <button id="btn-AC" class="btn-num">AC</button>
+        <button id="btn-equal">=</button>
+    </div>
+
+</body>
+
+</html>
